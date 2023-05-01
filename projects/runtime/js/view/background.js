@@ -25,31 +25,30 @@ var background = function (window) {
         // container which will be returned
         var background;
         
-        // ANIMATION VARIABLES HERE:
-        
-     
+        //////////////////////////////////////////////////////////////////
+        // ANIMATION VARIABLES HERE //////////////////////////////////////
+        //////////////////////////////////////////////////////////////////
+        // TODO (several):
+      
+      
         // called at the start of game and whenever the page is resized
         // add objects for display in background. draws each image added to the background once
         function render() {
             background.removeAllChildren();
 
-            // TODO: 2 - Part 2
-            // this fills the background with a obnoxious yellow
-            // you should modify this to suit your game
-            var backgroundFill = draw.rect(canvasWidth, canvasHeight, 'Black');
+            // TODO 1:
+            // this currently fills the background with an obnoxious yellow;
+            // you should modify both the height and color to suit your game
+            var backgroundFill = draw.rect(canvasWidth,canvasHeight,'yellow');
             background.addChild(backgroundFill);
             
-            // TODO: 3 - Add a moon and starfield
-            var moon = draw.bitmap('img/moon.png');
-            moon.x = 30;
-            moon.y = 10;
-            moon.scaleX = 10;
-            moon.scaleY = 10;
-            background.addChild(moon);
-            // TODO 5: Part 1 - Add buildings!     Q: This is before TODO 4 for a reason! Why?
+            // TODO 2: - Add a moon and starfield
             
             
-            // TODO 4: Part 1 - Add a tree
+            // TODO 4: Part 1 - Add buildings!     Q: This is before TODO 4 for a reason! Why?
+            
+            
+            // TODO 3: Part 1 - Add a tree
             
             
         } // end of render function - DO NOT DELETE
@@ -63,10 +62,10 @@ var background = function (window) {
             var canvasHeight = app.canvas.height;
             var groundY = ground.y;
             
-            // TODO 4: Part 2 - Move the tree!
+            // TODO 3: Part 2 - Move the tree!
             
             
-            // TODO 5: Part 2 - Parallax
+            // TODO 4: Part 2 - Parallax
             
 
         } // end of update function - DO NOT DELETE
