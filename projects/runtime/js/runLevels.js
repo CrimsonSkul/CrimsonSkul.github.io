@@ -62,6 +62,8 @@ var runLevels = function (window) {
     if (score === 10000) {
       health += 100;
     }
+
+  createReward ();
   }
     function startLevel() {
       // TODO 13 goes below here
